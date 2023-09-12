@@ -1,0 +1,837 @@
+/* .container {
+  max-width: ;
+} */
+
+/* ---------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
+
+/* utility classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+.flex {
+  display: flex;
+}
+.hr {
+  background-color: grey;
+}
+.hr-dotted {
+  border-top: 2px dotted #04a4f4;
+  height: 3px;
+  width: 100%;
+}
+.hr-dotted-B {
+  border-top: 2px dotted #04a4f4;
+  height: 3px;
+  width: 50%;
+}
+.container {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+/* ---------------------------------------------------------------- */
+/* banner */
+/* ---------------------------------------------------------------- */
+.banner {
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+.logo1 {
+  width: 200px;
+}
+.logo2 {
+  width: 60px;
+}
+.banner-icons {
+  font-size: 25px;
+}
+.box {
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.flag {
+  gap: 5px;
+  width: 60px;
+  height: 30px;
+}
+/* responsive */
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center-align text */
+  }
+  .box {
+    margin-top: 20px; /* Add spacing between boxes */
+  }
+  .logo1 {
+    width: 150px; /* Adjust logo size */
+  }
+  .logo2 {
+    display: none; /* Hide the second logo */
+  }
+  .flag {
+    display: none; /* Hide the flag and caret */
+  }
+}
+
+/* For screens larger than 768px */
+@media screen and (min-width: 769px) {
+  .banner {
+    justify-content: space-around; /* Restore the original arrangement */
+    text-align: left; /* Align text to the left */
+  }
+  .box {
+    margin-top: 0; /* Reset margin for boxes */
+  }
+
+  .logo1 {
+    width: 200px; /* Restore the original logo size */
+  }
+  .logo2 {
+    display: block; /* Show the second logo */
+  }
+  .flag {
+    display: flex; /* Show the flag and caret */
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* Navbar */
+/* ---------------------------------------------------------------- */
+.navbar {
+  color: white;
+  background-color: #04a4f4;
+  /* padding: 18px; */
+  align-items: center;
+  gap: 40px;
+  height: 50px;
+}
+.left-part {
+  align-items: center;
+  padding: 18px;
+  gap: 40px;
+}
+.links {
+  cursor: pointer;
+}
+
+.right-part {
+  color: white;
+}
+.right-part input {
+  border: none;
+  width: 120%;
+  height: 100%;
+
+  background-color: #187cf4;
+}
+/* ---------------------------------------------------------------- */
+/* hero-Section */
+/* ---------------------------------------------------------------- */
+.hero-section {
+  width: 100%;
+  height: 280px;
+  /* height: 100%; */
+}
+.hero {
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+  background-color: #081c4c;
+}
+.knee-img {
+  width: 300px;
+  height: 280px;
+}
+.hero-info {
+  gap: 15px;
+  color: white;
+  flex-direction: column;
+}
+.enquiry {
+  height: 4vh;
+  width: 30%;
+  background-color: #04a4f4;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+.enquiry:hover {
+  color: #04a4f4;
+  background-color: #ffffff;
+}
+/* responsive */
+/* Common Styles */
+
+/* Hero Section */
+/* .hero-section {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+} */
+
+/* Responsive Styles */
+/* @media screen and (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero {
+    width: 50%;
+  }
+
+  .knee-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .hero-info {
+    text-align: left;
+  }
+
+  .enquiry {
+    width: auto;
+  }
+} */
+
+/* ---------------------------------------------------------------- */
+/* Main-Navbar */
+/* ---------------------------------------------------------------- */
+.main-navbar {
+  padding: 60px;
+  height: 50px;
+  gap: 40px;
+  align-items: center;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* ---------------------------------------------------------------- */
+/* treatment-overview */
+/* ---------------------------------------------------------------- */
+.treatment-overview {
+  padding: 30px 0px;
+  /* height: 340px; */
+  /* justify-content: space-evenly; */
+  align-items: center;
+  gap: 150px;
+}
+.text-part {
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+}
+/* responsive */
+/* Common Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Treatment Overview Section */
+.treatment-overview {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.text-part {
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.text-part h3 {
+  font-size: 24px;
+}
+
+.text-part p {
+  font-size: 16px;
+}
+
+.img-part {
+  margin-top: 20px;
+}
+
+.img-part img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  .treatment-overview {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-part {
+    text-align: left;
+    width: 50%;
+  }
+
+  .img-part {
+    width: 50%;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* eligibility-prepartion */
+/* ---------------------------------------------------------------- */
+.main-container {
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.eligibility-for-treatment {
+  padding: 30px 0px;
+
+  align-items: center;
+}
+.preparation-for-treatment {
+  padding: 30px 0px;
+
+  align-items: center;
+}
+.need-help-card {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 0.5px solid black;
+  padding: 20px;
+  box-shadow: 0 0 3px 1px grey;
+}
+.need-help-card-text {
+  flex-direction: column;
+  gap: 10px;
+}
+.form-input {
+  padding: 5px;
+  height: 12%;
+  width: 100%;
+}
+.desc-input {
+  padding: 5px;
+  height: 20%;
+  width: 100%;
+}
+.need-help-card-btn {
+  height: 12%;
+  width: 100%;
+  background-color: #04a4f4;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+.need-help-card-btn:hover {
+  color: #04a4f4;
+  border: 0.5px solid #04a4f4;
+  background-color: #ffffff;
+}
+/* responsive */
+/* Common Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Main Container */
+.main-box {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Main Container for Desktop */
+@media screen and (min-width: 768px) {
+  .main-box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Eligibility and Preparation Sections */
+.eligibility-for-treatment,
+.preparation-for-treatment {
+  padding: 20px;
+  align-items: center;
+}
+
+/* Need Help Card */
+.need-help-card {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  border: 0.5px solid black;
+  padding: 20px;
+  box-shadow: 0 0 3px 1px grey;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  .eligibility-for-treatment,
+  .preparation-for-treatment {
+    padding: 30px 0;
+  }
+
+  /* Additional content for desktop */
+  .post-treatment-icon {
+    align-items: flex-start;
+  }
+}
+
+/* Form Input Styles */
+.form-input,
+.desc-input {
+  padding: 5px;
+  width: 100%;
+}
+
+/* Button Styles */
+.need-help-card-btn {
+  height: 40px;
+  width: 100%;
+  background-color: #04a4f4;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+.need-help-card-btn:hover {
+  color: #04a4f4;
+  border: 0.5px solid #04a4f4;
+  background-color: #ffffff;
+}
+
+/* ---------------------------------------------------------------- */
+/* about-prepartion */
+/* ---------------------------------------------------------------- */
+
+.about-treatment {
+  /* justify-content: center; */
+  padding: 30px 0px;
+
+  align-items: center;
+  gap: 50px;
+}
+/* responsive */
+.about-treatment {
+  padding: 30px 0;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .about-treatment {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-part {
+    text-align: center;
+  }
+
+  .post-treatment-icon {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* post-treatment-care-treatment */
+/* ---------------------------------------------------------------- */
+.post-treatment-care-treatment {
+  padding: 30px 0px;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 50px;
+}
+.post-treatment-icon {
+  gap: 9px;
+}
+/* ---------------------------------------------------------------- */
+/* Treatment-recovery */
+/* ---------------------------------------------------------------- */
+.treatment-recovery {
+  padding: 30px 0px;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 50px;
+}
+
+/*-----------------------------------------------------------------
+    -Treatment-FAQ
+  ----------------------------------------------------------------- */
+.treatment-FAQ {
+  padding: 50px 0px;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 50px;
+}
+.treatment-text {
+  flex-direction: column;
+  gap: 10px;
+}
+.treatment-icon {
+  gap: 8px;
+}
+/* responsive  */
+.treatment-FAQ {
+  padding: 50px 0;
+  align-items: center;
+  gap: 50px;
+}
+
+.treatment-text {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.treatment-icon {
+  gap: 8px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .treatment-text {
+    text-align: center;
+  }
+
+  .treatment-icon {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*-----------------------------------------------------------------
+    -Carousel1
+  ----------------------------------------------------------------- */
+.Carousel1-main {
+  flex-direction: column;
+  gap: 10px;
+}
+.carausel1-card-header {
+  align-items: center;
+  gap: 22px;
+}
+.colon {
+  height: 50px;
+  width: 70px;
+}
+.carausel1-card-image {
+  margin-top: 15px;
+  height: 100%;
+  width: 100%;
+}
+.carausel1-card-image img {
+  height: 90%;
+  width: 90%;
+}
+.carausel1-card {
+  flex-direction: column;
+  gap: 52px;
+  width: 300px;
+  border: 1px solid slategray;
+  padding: 12px;
+}
+.carausel2-card {
+  flex-direction: column;
+  gap: 52px;
+  width: 300px;
+  border: 1px solid slategray;
+  padding: 20px 12px;
+}
+.carausel1-card-footer {
+  align-items: center;
+  justify-content: left;
+}
+.footer-img {
+  height: 50px;
+}
+/*-----------------------------------------------------------------
+    -Top-Doctors Carousel -
+  ----------------------------------------------------------------- */
+.top-doctors-carousel {
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 60px;
+
+  background-color: #f0f4f4;
+  text-align: center;
+}
+.pink-box {
+  width: 200px;
+  height: 170px;
+  background-color: pink;
+}
+.rec-card-1 {
+  gap: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 280px;
+  border: 1px solid black;
+}
+.top-doctors-carousel-doctor {
+  font-style: italic;
+  color: #e90b0b;
+}
+.top-doctors-carousel-doctor-2 {
+  word-spacing: 3px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: rgba(45, 185, 220, 0.887);
+}
+.top-doctors-carousel-top {
+  word-spacing: 2px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.owl-carousel-doc {
+  font-weight: 700;
+  font-size: 13px;
+  color: gray;
+}
+/*-----------------------------------------------------------------
+    -Recommended hospital -
+  ----------------------------------------------------------------- */
+.recommed-hospital {
+  gap: 25px;
+  flex-direction: column;
+  padding: 30px;
+
+  text-align: center;
+}
+.hosp-card {
+  flex-direction: column;
+  text-align: center;
+  width: 280px;
+  height: 330px;
+  border: 1px solid black;
+}
+.recommed-hospital-img {
+  word-spacing: 3px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: rgba(45, 185, 220, 0.887);
+}
+
+/*-----------------------------------------------------------------
+    -Contact
+  ----------------------------------------------------------------- */
+.contact-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #04a4f4;
+  color: white;
+  gap: 20px;
+}
+
+.contact-btn {
+  height: 40px;
+  width: 100px;
+  background-color: #0474f4;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: #0474f4;
+}
+
+/*-----------------------------------------------------------------
+    -Footer
+  ----------------------------------------------------------------- */
+
+.footer1 {
+  padding: 30px;
+  justify-content: center;
+  gap: 60px;
+  background-color: #102434;
+  color: white;
+}
+
+.footer1-sub {
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* footer2 */
+
+.footer2 {
+  padding: 20px 0px 20px 20px;
+
+  gap: 50px;
+  background-color: #102434;
+  color: white;
+}
+.logo-footer2 {
+  width: 300px;
+}
+.footer2-sub {
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+}
+.follow-us {
+  flex-direction: column;
+  gap: 10px;
+}
+.nos {
+  color: rgb(0, 140, 255);
+}
+.icons-social {
+  gap: 20px;
+}
+/* footer3 */
+
+.footer3 {
+  gap: 20px;
+  background-color: #04a4f4;
+  color: white;
+}
+/* responsive */
+/* Contact Section */
+.contact-us {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-btn {
+  height: 40px;
+  width: 100px;
+}
+
+/* Footer Styles */
+.footer1,
+.footer2,
+.footer3 {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer1 {
+  padding: 15px 20px;
+}
+
+.footer1-sub,
+.footer2-sub,
+.follow-us {
+  width: 100%;
+}
+
+.logo-footer2 {
+  max-width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  /* Contact Section */
+  /* .contact-us {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-btn {
+    width: auto;
+  } */
+
+  /* Footer Styles */
+  .footer1,
+  .footer2,
+  .footer3 {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer1-sub,
+  .footer2-sub,
+  .follow-us {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+  }
+
+  .logo-footer2 {
+    width: auto;
+  }
+}
